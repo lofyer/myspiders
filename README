@@ -1,0 +1,7 @@
+myspider
+
+My kinds of spiders.
+With redis/scrapyd, I can crawl these sites distributely.
+
+dmoz: Sample of scrapy.
+tongcheng: To crawl 58.com
