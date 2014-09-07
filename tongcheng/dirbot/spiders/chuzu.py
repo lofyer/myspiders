@@ -10,9 +10,9 @@ class DmozSpider(Spider):
     name = "chuzu"
     allowed_domains = ["58.com"]
     start_urls = ["http://sh.58.com/chuzu/"]
-#    for i in range(2,50):
-#        new_page="http://sh.58.com/chuzu/pn%s" %(i)
-#        start_urls.append(new_page)
+    for i in range(2,70):
+        new_page="http://sh.58.com/chuzu/pn%s" %(i)
+        start_urls.append(new_page)
     rules = (
         Rule(LinkExtractor(restrict_xpaths='//div[@class="pager/a[@class="next"]'),
         callback = 'parse', follow = True)
