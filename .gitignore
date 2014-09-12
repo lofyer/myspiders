@@ -1,4 +1,5 @@
 .DS_Store
 *.xml
+*.csv
 *.json
 *.pyc

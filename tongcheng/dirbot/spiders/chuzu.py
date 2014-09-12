@@ -29,7 +29,7 @@ class DmozSpider(Spider):
             item['location'] = site.xpath(".//td[@class='t qj-rentd']/p[@class='qj-renaddr']/a[@class='a_xq1']/text()").extract()
             item['price'] = site.xpath(".//td[3]/b[@class='pri']/text()").extract()
             item['room'] = site.xpath(".//td[3]/span[@class='showroom']/text()").extract()
-            #item['url'] = site.xpath('a/@href').extract()
+            item['url'] = site.xpath(".//td[@class='t qj-rentd']/h1/a[@class='t']/@href").extract()
             items.append(item)
 
         return items
