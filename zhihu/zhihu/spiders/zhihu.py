@@ -12,7 +12,7 @@ sys.setdefaultencoding('utf-8')
 host='http://www.zhihu.com'
 
 class ZhihuUserSpider(CrawlSpider):
-	name = 'zhihu_user'
+	name = 'zhihu'
 	allowed_domains = ['zhihu.com']
 	start_urls = ["http://www.zhihu.com/lookup/people",]
 	#使用rule时候，不要定义parse方法
